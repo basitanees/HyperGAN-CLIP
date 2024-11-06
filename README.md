@@ -1,5 +1,5 @@
 # HyperGAN-CLIP: A Unified Framework for Domain Adaptation, Image Synthesis and Manipulation <br><sub>Official PyTorch Implementation of the SIGGRAPH Asia 2024 Paper</sub>
-![Teaser image 1](srcs/teaser.png)
+![Teaser image 1](srcs/teaser.jpg)
 **HyperGAN-CLIP: A Unified Framework for Domain Adaptation, Image Synthesis and Manipulation**<br>
 Abdul Basit Anees, Ahmet Canberk Baykal, Duygu Ceylan, Aykut Erdem, Erkut Erdem, Muhammed Burak Kızıl<br>
 [![arXiv]()](https://arxiv.org/abs/xxxx.xxxxx)
@@ -28,6 +28,7 @@ Download files under `pretrained_models/`.
 |[ArcFace](https://drive.google.com/uc?id=1bwcB_AvbD0_qHGUoQCxzbp2wEurhjD4c&export=download) | Pretrained face recognition model to calculate identity loss.
 |[afhqcat.pt](https://drive.google.com/uc?id=17K_U0IKaVKoQT4lJ6zf1h6ijfmrHSB7B&export=download) | StyleGAN model pretrained on [AFHQ_Cat](https://github.com/clovaai/stargan-v2) with 512x512 output resolution.
 |[afhqcat_PCA.npz](https://drive.google.com/uc?id=1_JiWz-8eiki-LFFF0Aerf8GpM6mpjpYR&export=download) | PCA components of the pretrained StyleGAN(AFHQ_Cat) latent space.
+|[tge_rbe_final_checkpoint.pt](https://drive.google.com/file/d/1KQKO_aqeuHwwPFWHHCVqln6Zwx4-tpU4/view?usp=drive_link) | HyperGAN-CLIP trained for Text-Guided and Reference-Based Image Editing
 
 ## Training
 Before training your model, put target images in the `target_data/{folder_name}/` directory and run
@@ -44,7 +45,7 @@ This code is borrowed from [DynaGAN](https://github.com/blueGorae/DynaGAN).
 ## Citation
 
 ```bibtex
-@inproceedings{Kim2022DynaGAN,
+@inproceedings{Anees2024HyperGANCLIP,
     title     = {HyperGAN-CLIP: A Unified Framework for Domain Adaptation, Image Synthesis and Manipulation},
     author    = {Abdul Basit Anees and Ahmet Canberk Baykal and Duygu Ceylan and Aykut Erdem and Erkut Erdem and Muhammed Burak Kızıl},
     booktitle = {Proceedings of the ACM (SIGGRAPH Asia)},
